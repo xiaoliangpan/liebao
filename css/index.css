@@ -1,0 +1,296 @@
+html,body {
+    width: 100%;
+}
+
+/*@media screen and (min-width: 760px){*/
+
+/*}*/
+
+/*@media screen and (min-width: 1200px) {*/
+    .main {
+        position: relative;
+        width: 100%;
+        height: 579px;
+        margin: 0 auto;
+        background-color: #fd6a28;
+        animation: banner_bg 15s ease 0.1ms infinite forwards;
+    }
+    .nav_bg {
+        height: 89px;
+        width: 100%;
+        margin: 0 auto;
+        opacity: .6;
+    }
+    .nav {
+        width: 61%;
+        height: 89px;
+        line-height: 89px;
+        margin: 0 auto;
+
+
+    }
+    .nav .logo_title {
+        text-indent: -9999px;
+    }
+    .nav .nav_left {
+        width: 170px;
+        height: 100%;
+        float: left;
+
+    }
+    .nav .logo {
+        display: inline-block;
+        margin-top: 19px;
+    }
+    .nav .nav_right {
+        display: inline-block;
+        height: 89px;
+        width: 500px;
+        line-height: 87px;
+        text-align: center ;
+        float: right;
+
+    }
+    .nav .nav_right a {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+
+    }
+    .nav .nav_right a:last-child {
+        width: 37%;
+    }
+    .nav_right a em {
+        font-size: 1.6em;
+        font-style: normal;
+        color: #fff;
+    }
+    .nav_right a:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+
+    /*轮播图开始*/
+    .main .banner {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        width: 960px;
+        height: 579px;
+
+    }
+    .main .banner li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .main .banner li.banner_first {
+        background: url("../images/banner1.png") no-repeat;
+        opacity: 1;
+        animation: banner_first 15s ease 0.1ms infinite forwards;
+    }
+    .main .banner li.banner_second {
+        background: url("../images/liebao57.png") no-repeat;
+        opacity: 0;
+        animation: banner_second 15s ease 0.1ms infinite forwards;
+    }
+    .main .banner li .down_load {
+        display: block;
+        position: absolute;
+        top: 59%;
+        left: 55%;
+        width: 205px;
+        height: 65px;
+        background: url("../images/btn201711032.png") no-repeat;
+
+    }
+    .main .banner .down_load:hover {
+
+        background: url("../images/btn201711032.png") -205px no-repeat;
+    }
+
+    @keyframes banner_first {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+
+        }
+
+        to {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+    }
+    @keyframes banner_second {
+        from {
+            transform: translateX(0);
+            opacity: 0;
+
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-25px);
+        }
+    }
+    @keyframes banner_bg {
+        from {
+            background-color: #fd6a28;
+        }
+
+        to {
+            background-color: rgb(34, 32, 107);
+        }
+
+    }
+
+    .feature {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .feature .feature_list li {
+        float: left;
+        width: 25%;
+        height: 248px;
+        box-sizing: border-box;
+    }
+    .feature .feature_list .feature_img {
+        width: 100px;
+        height: 100px;
+        margin: 18px auto;
+
+    }
+    .feature_list li:nth-child(1) .feature_img {
+        background: url("../images/li1.jpg") no-repeat;
+    }
+    .feature_list li:nth-child(2) .feature_img {
+        background: url("../images/aaaa_05.jpg") no-repeat;
+    }
+    .feature_list li:nth-child(3) .feature_img {
+        background: url("../images/aaaa_07.jpg") no-repeat;
+    }
+    .feature_list li:nth-child(4) .feature_img  {
+        background: url("../images/aaaa_09.jpg") no-repeat;
+    }
+
+
+    .feature_list .title {
+        font-size: 18px;
+        color: #ff6900;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .feature_list .desc {
+        font-size: 14px;
+        color: #333;
+
+    }
+
+    .dynamic {
+        width: 960px;
+        /*height: 433px;*/
+        margin: 0 auto;
+
+    }
+    .dynamic .dynamic_news {
+        width: 913px;
+        height: 114px;
+        margin: 10px auto;
+
+
+    }
+    .dynamic_news .news_img {
+        float: left;
+        margin: 15px 0 0 36px;
+    }
+    .dynamic_news .news_img a,img  {
+        display: block;
+    }
+    .dynamic_news .news_content {
+        float: left;
+        width: 658px;
+        height: 114px;
+        margin-left: 40px;
+    }
+    .dynamic_news .news_content .title, .title a {
+        /*margin-top: 12px;*/
+        /*margin-bottom: 10px;*/
+        margin: 12px auto 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        text-indent: -7px;
+    }
+    .dynamic_news .news_content .desc,.desc a  {
+        line-height: 22px;
+        color: #606060;
+    }
+
+    footer {
+        width: 100%;
+        height: 160px;
+        background-color: #464646;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid gold;
+    }
+    footer .share {
+
+    }
+    footer .share a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 20px 8px 0px;
+    }
+    footer .share a:nth-child(1) {
+        background: url("../images/newshares.png") no-repeat;
+    }
+    footer .share a:nth-child(2){
+        background: url("../images/newshares.png") -63px center no-repeat;
+    }
+    footer .share a:nth-child(3) {
+        background: url("../images/newshares.png") -125px center no-repeat;
+    }
+    footer .bar_link {
+        color: #c0c0c0;
+        margin-top: 2px;
+    }
+    footer .bar_link a {
+        display: inline-block;
+        width: 68px;
+        height: 30px;
+        line-height: 30px;
+        color: #c0c0c0;
+
+    }
+    footer .bar_link a:hover {
+        color: #fff;
+    }
+    footer .bar_link a:nth-child(2) {
+        width: 116px;
+    }
+
+    footer .permission {
+        height: 30px;
+        line-height: 30px;
+        color: #6d6d6d;
+    }
+    footer .permission span {
+        height: 100%;
+
+        display: inline-block;
+    }
+    .footer .copy {
+         color: #c0c0c0;
+    }
+
+
+
+
+/*}*/
+
